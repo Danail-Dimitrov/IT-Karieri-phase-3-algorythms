@@ -1,0 +1,36 @@
+﻿					ooп
+1 Абстрактни типове данни - Абстрактните типове данни ни позволяват да опишем конкретна структура (т.е. нейните данни и операции), без обаче да се интересуваме от детайлите в тази реализация
+1.1 Множество от данни
+1.2 Възможни операции в рамките на този тип
+2 клас описва реален обект на езика на програмирането той е шаблон по който се правят обекти
+3 създаване на обекти :
+solution explorer -> десен бутон върху приложението (ред 2) -> add -> class -> select class -> name -> add 
+4 example za class:
+
+class Person {
+  private string name;
+  private int age;
+
+  public void setAge(int newAge)
+{ 
+  age = newAge;
+}
+
+5 private - zabranqva da se pipa promenlivata ot drugi mesta osven ot classa
+
+6 public mojem da dostupvame promenlivata ot osnovnata programa
+
+7 chrez metodi kato setAge moje da ogranichavame amplitudite na stoinostirte na promenlivite.
+
+8 sukraten zapis na metodite:
+public int Age 
+{
+    get { return age; }
+    set { age = value; }
+}
+tozi metod ednovremeno vzima i slaga stoinost na promenlivata age
+person.Age=5;-she sloji 
+C.WL(person.Age);-shte vzeme 
+
+
+
