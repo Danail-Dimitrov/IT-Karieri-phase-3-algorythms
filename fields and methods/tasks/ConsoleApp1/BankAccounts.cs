@@ -9,7 +9,7 @@ namespace ConsoleApp1
     class BankAccounts
     {
         private string iban;
-        private decimal ammount;
+        private decimal ammount = 0m;
 
         public void Deposit (decimal ammount)
         {
@@ -19,6 +19,11 @@ namespace ConsoleApp1
         public void Withdraw(decimal ammount)
         {
             this.ammount -= ammount;
+        }
+
+        public decimal Amount 
+        {
+            get { return ammount; }
         }
     }
 }
