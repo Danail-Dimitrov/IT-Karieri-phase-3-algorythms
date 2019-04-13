@@ -32,5 +32,14 @@ tozi metod ednovremeno vzima i slaga stoinost na promenlivata age
 person.Age=5;-she sloji 
 C.WL(person.Age);-shte vzeme 
 
+konstruktori
+public Dice()
+  {
+    this.sides = 6;
+  }
+zarcheto ima 6 strani po default
+
+this-kazva che promenlivata e ot poletata ane ot metoda v classa
+
 
 
