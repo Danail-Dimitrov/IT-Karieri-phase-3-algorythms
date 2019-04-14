@@ -40,6 +40,16 @@ public Dice()
 zarcheto ima 6 strani po default
 
 this-kazva che promenlivata e ot poletata ane ot metoda v classa
+------------------------------------------------------------------------------------------------------------------------------------
+kapsulacia
+protected modifyer - mojem da dostupim elementa samo ot podclassovete 
+iternal modifyer - modefikator po podrazbirane dava dostup na vsichki classove v tozi namespace 
+public modifyer - dava dostup na vseki class v .NET 
+
+
+
+
+
 
 
 
