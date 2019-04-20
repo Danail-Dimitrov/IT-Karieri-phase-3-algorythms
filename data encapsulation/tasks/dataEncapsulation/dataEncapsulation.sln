@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "animalFarm", "animalFarm\an
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataCheck", "dataCheck\dataCheck.csproj", "{F915CE23-FAFF-4799-90A8-42D92A50E1D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market", "Market\Market.csproj", "{61898A21-58B6-423F-85C1-7017659765D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market", "Market\Market.csproj", "{61898A21-58B6-423F-85C1-7017659765D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pizzaCalories", "pizzaCalories\pizzaCalories.csproj", "{73614877-E5D0-4577-BD4D-224DB7E9569C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{61898A21-58B6-423F-85C1-7017659765D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61898A21-58B6-423F-85C1-7017659765D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61898A21-58B6-423F-85C1-7017659765D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73614877-E5D0-4577-BD4D-224DB7E9569C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73614877-E5D0-4577-BD4D-224DB7E9569C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73614877-E5D0-4577-BD4D-224DB7E9569C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73614877-E5D0-4577-BD4D-224DB7E9569C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,13 +9,13 @@ namespace Market
     {
         private string name;
         private double money;
-        private List<Product> bag;
+        private List<string> bag;
 
         public Person (string name, double money)
         {
             this.name = name;
             this.money = money;
-            bag = new List<Product>;
+            bag = new List<string>();
         }
 
         public string Name
@@ -51,7 +51,19 @@ namespace Market
             }
         }
 
-        public List<Product> Bag
+        public void Buy (Product product)
+        {
+            double price = product.Price;
+            if ( money < price )
+            {
+                throw new ArgumentException($"{name} can't afford {product.Type}");
+            }
+            money -= price;
+            bag.Add(product.Type);
+            Console.WriteLine($"{name} bought {product.Type}");
+        }
+
+        public List<string> Bag
         {
             get
             {
@@ -63,18 +75,21 @@ namespace Market
             }
         }
 
-        public void BuyProduct (Product product)
+        public string Print ()
         {
-            if ( product.Price > this.money )
+            string toReturn = null;
+            if ( bag.Count == 0 )
             {
-                Console.WriteLine($"{name} can't afford {product}");
+                toReturn = "- Nothing bought";
             }
             else
             {
-                bag.Add(product);
-                money -= product.Price;
+                toReturn = "- " + string.Join(", ", bag);
             }
+
+            return toReturn;
         }
     }
 }
+
 
