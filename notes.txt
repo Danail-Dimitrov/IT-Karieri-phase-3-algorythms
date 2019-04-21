@@ -44,9 +44,17 @@ this-kazva che promenlivata e ot poletata ane ot metoda v classa
 kapsulacia
 protected modifyer - mojem da dostupim elementa samo ot podclassovete 
 iternal modifyer - modefikator po podrazbirane dava dostup na vsichki classove v tozi namespace 
-public modifyer - dava dostup na vseki class v .NET 
-
-
+public modifyer - dava dostup na vseki class v .+NET 
+------------------------------------------------------------------------------------------------------------------------------------
+         statichni chasti na classa
+1. prinadlejat na samiq class
+2.! imat edna i shushta  stoinost za vseki obekt
+3. statichnite neshtica sa zvurzani ssus samiq class i ako gi vikame se pishe z.B Person.eyes;
+			       z.B Math.Pow();
+4.! za da se zabrani na daden class da suzdava obekti se pishe prazaen konstruktor koito e private || pravim samiq klas statichen (nachinat sus konstuktora e po dobur za pametta)
+{ctrl+klick}
+5. static constructor - dava samo edna istaciq za cqloto prilojenie (zarejda se obekt koito ne mojem da dostupim) v nego mojem da inicializirame spisuk array ili kakvoto mu e ujno na klasa
+/
 
 
 
