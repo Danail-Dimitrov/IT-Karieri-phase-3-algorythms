@@ -9,7 +9,7 @@ namespace pizzaCalories
         private int weight;
         private string type;
         private string technic;
-        private int caloriesPerGram = 2;
+        private  static int caloriesPerGram = 2;
 
         public Dough (int weight, string type, string technic)
         {
@@ -58,7 +58,7 @@ namespace pizzaCalories
             }
             set
             {
-                if ( value != "White" && value != "Wholegrain" )
+                if ( value != "Crispy" && value != "Chewy" && value != "Homemade " )
                 {
                     throw new ArgumentException("Invalid type of dough");
                 }
