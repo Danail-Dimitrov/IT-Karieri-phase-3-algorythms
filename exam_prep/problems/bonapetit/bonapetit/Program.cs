@@ -63,8 +63,7 @@ namespace Restaurant
             {
                 mealProducts.Add(products[product]);
             }
-            // 			}
-
+          
             try
             {
                 meals.Add(name, new Meal(name, type, mealProducts));

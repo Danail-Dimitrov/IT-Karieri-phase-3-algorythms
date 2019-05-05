@@ -10,10 +10,9 @@ namespace bonapetit
         private string name;
         private double price;
         private int weight;
-        private static Dictionary<string, Product> list;
 
 
-        public Product () : this("default", 0.0, 0)
+        public Product () : this("default", 99999, 1)
         {
         }
         public Product (string name, double price, int weight)
@@ -23,17 +22,6 @@ namespace bonapetit
             Weight = weight;           
         }
         
-        public Dictionary<string, Product> List
-        {
-            get
-            {
-                return list;
-            }
-            private set
-            {
-                list = value;
-            }
-        }
         public string Name
         {
             get
@@ -42,7 +30,14 @@ namespace bonapetit
             }
             set
             {
-                name = value;
+                if(value.Length >= 3)
+                {
+                    name = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid Command");
+                }
             }
         }
         public double Price
@@ -53,7 +48,14 @@ namespace bonapetit
             }
             set
             {
-                price = value;
+                if(value > 0.01)
+                {
+                    price = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid Command");
+                }
             }
         }
         public int Weight
@@ -64,30 +66,33 @@ namespace bonapetit
             }
             set
             {
-                weight = value;
+                if(value > 0)
+                {
+                    weight = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid Command");
+                }
             }
         }
 
-
-        //vij napravenite metodi v program.cs
-        //te pravqt dolnite dva metoda izlishni kakto i static dictonaryto na classa
-        public static void AddProduct (string name, double price, int weight)
+        public static Product GetCheapestProduct (Dictionary<string, Product> products)
         {
-            var product= new Product (name, price, weight);
-            products.Add(name, product);
-        }
-        public static void AddMultiProduct (int number)
-        {
-            for(int i = 0 ; i < number  ; i++)
+            var cheapestProduct = new Product();
+            foreach(var pair in products)
             {
-                string[] command = Console.ReadLine().Split(' ').ToArray();
-                AddProduct(command[0], double.Parse(command[1]), int.Parse(command[2]));
+                if(pair.Value.Price < cheapestProduct.Price)
+                {
+                    cheapestProduct = pair.Value;
+                }
             }
+            return cheapestProduct;
         }
 
         public override string ToString ()
         {
-            return $"{name}-{weight}";
+            return $"{name} - {weight}";
         }
     }
 }
