@@ -56,6 +56,7 @@ public modifyer - dava dostup na vseki class v .+NET
 5. static constructor - dava samo edna istaciq za cqloto prilojenie (zarejda se obekt koito ne mojem da dostupim) v nego mojem da inicializirame spisuk array ili kakvoto mu e ujno na klasa
 /
 
+MOJESH DA POLZVASH .SELECT ZA DA MANIPULIRASH VSICHKO V COLEKCIQTA
 
 
 
